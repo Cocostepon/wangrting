@@ -1,0 +1,225 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>棒棒糖的小窝</title>
+    <style>
+        body {
+            font-family: "SimSun", "宋体", serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background-color: white;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        /* 头部导航 */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px 20px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .site-title {
+            font-size: 24px;
+            font-weight: bold;
+            color: #1E90FF; /* 提夫尼蓝 */
+        }
+        
+        nav a {
+            margin-left: 25px;
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+        
+        /* 横幅图区域 */
+        .banner {
+            height: 180px;
+            background-image: url('https://via.placeholder.com/1000x180?text=山景横幅');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+        
+        /* 主要内容区 */
+        .main-content {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+        
+        .left-column {
+            flex: 1;
+            border-right: 1px solid #eee;
+            padding-right: 20px;
+        }
+        
+        .right-column {
+            flex: 1;
+            padding-left: 20px;
+        }
+        
+        /* 个人信息卡片 */
+        .profile-card {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        .avatar {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin: 0 auto 10px;
+            display: block;
+            background-color: #f0f0f0;
+        }
+        
+        .name {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 5px;
+        }
+        
+        .major {
+            text-align: center;
+            color: #666;
+            margin-bottom: 15px;
+        }
+        
+        .section-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+        
+        .list-item {
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        
+        /* 博客列表 */
+        .blog-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        .blog-list li {
+            padding: 8px 0;
+            border-bottom: 1px dashed #eee;
+        }
+        
+        .blog-list li:last-child {
+            border-bottom: none;
+        }
+        
+        /* 关于我部分 */
+        .about-section {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+        }
+        
+        .about-title {
+            font-size: 18px;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        /* 博客文章预览 */
+        .blog-preview {
+            background-color: #fff;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+            min-height: 120px;
+        }
+        
+        .blog-title {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部导航 -->
+        <header>
+            <h1 class="site-title">棒棒糖的小窝</h1>
+            <nav>
+                <a href="#">首页</a>
+                <a href="#">个人经历</a>
+                <a href="#">个人博客</a>
+                <a href="#">联系我</a>
+            </nav>
+        </header>
+        
+        <!-- 横幅图 -->
+        <div class="banner"></div>
+        
+        <!-- 主要内容区 -->
+        <div class="main-content">
+            <!-- 左侧栏 -->
+            <div class="left-column">
+                <!-- 个人信息卡片 -->
+                <div class="profile-card">
+                    <img src="https://via.placeholder.com/80x80?text=头像" alt="棒棒糖的头像" class="avatar">
+                    <div class="name">棒棒糖</div>
+                    <div class="major">计算机科学与技术</div>
+                    
+                    <div class="section-title">兴趣爱好:</div>
+                    <p class="list-item">喜欢画画运动，希望在专业技术上多多提升～♡</p>
+                    
+                    <div class="section-title">自我评价:</div>
+                    <p class="list-item">具有团队合作精神，待事待人认真负责，期待与他人思想上的交汇与碰撞。</p>
+                </div>
+                
+                <!-- 随便看看 -->
+                <div class="profile-card">
+                    <div class="section-title">随便看看</div>
+                    <ul class="blog-list">
+                        <li><a href="#" style="text-decoration: none; color: inherit;">学习院校</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">优势学科</a></li>
+                        <li><a href="#" style="text-decoration: none; color: inherit;">我的相册</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- 右侧栏 -->
+            <div class="right-column">
+                <!-- 关于我 -->
+                <div class="about-section">
+                    <div class="about-title">网站简介 About</div>
+                    <p>我是一名计算机专业的大学生，在学习之余，积极将所学用于实践的成果，并建此网站，用来记录个人成长与实际操作中探得的成果与理解。</p>
+                </div>
+                
+                <!-- 博客文章 -->
+                <div class="blog-preview">
+                    <div class="blog-title">博客1</div>
+                    <p>这里可以放置第一篇博客的内容...</p>
+                </div>
+                
+                <div class="blog-preview">
+                    <div class="blog-title">博客2</div>
+                    <p>这里可以放置第二篇博客的内容...</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
